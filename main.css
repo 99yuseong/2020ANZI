@@ -7,7 +7,7 @@ body {
 	font-size: 10px;
 	/* 폰트 사이즈 설정 안해둔 값들의 기본 설정 */
 	line-height: 1.2;
-	font-weight: normal;
+	font-weight: bold;
 	overflow-x: hidden;
 	/* x축으로 넘치는 부분 없애기(스크롤 안되게 하는 법) */
 }
@@ -18,7 +18,7 @@ h1 {
   font-size: 30px;
   line-height: 30px;
 	/* 줄과 줄 사이 간격 */
-  font-weight: normal;
+  font-weight: 1.2;
   /* 글자 굵기 */
 }
 
