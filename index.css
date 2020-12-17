@@ -1,0 +1,94 @@
+.text-area {
+	/* margin > 여백 */
+	margin-top: 90px;
+	margin-left: 24px;
+}
+
+.text-area h1 {
+	margin-bottom: 22px;
+}
+
+.line {
+	width: 46px;
+	height: 0.7px;
+	display: inline-block;
+	background-color: #ffe6cf;
+	position: relative;
+	top: -7px;
+	opacity: 0.2;
+}
+
+.volume {
+	margin-bottom: 85px;
+}
+
+p {
+	font-size: 10px;
+}
+
+#circle-wrapper {
+	/* id의 경우에는 #, class의 경우에는 . > 공통된 속성을 주고 싶다!*/
+	position: relative;
+	margin-left: 24px;
+	margin-top: 42px;
+}
+
+.circle {
+	width: 246px;
+	height: 246px;
+	border-radius: 50%;
+ 	/* 원을 만들고 싶을 때 */
+	position: absolute;
+}
+
+.circle:nth-child(1) {
+	/* 몇 번째 child를 선택한다. 혹은 first-child......last-child로도 사용할  있음 */
+	background-color: transparent;
+	border: 1px solid black;
+	opacity: 0.2;
+	/* 20%의 opacity */
+	box-sizing: border-box;
+	/* 보통 border은 외부쪽으로 그려지게 되는데, 선이 굵어지면 크기가 좀 커질  있음. 그래서 안쪽으로 그려지게 하려면 이렇게! */
+}
+.circle:nth-child(2) {
+	background-color: #ffc000;
+	left: 100px;
+}
+.circle:nth-child(3) {
+	background-color: #fedd15;
+	left: 200px;
+	transition: 1s;
+	/* 1초 동안 움직여라 */
+	top: 0;
+	/* 시작점과 끝점(hover에서 명시) 둘 다 있어야 animation으로 나타날 수 있음 */
+}
+
+.circle:nth-child(3):hover {
+	/* 마우스를 올려지면 어떤 스타일로 변경되라 */
+	background-color: blue;
+	top: -20px;
+}
+
+.circle:nth-child(3):active {
+	/* 마우스를 클릭하면(지그시 누르면) 어떤 스타일로 변경되라 */
+	background-color: red;
+	top: -20px;
+}
+
+#badge {
+	background-color: #ffc000;
+	width: 56px;
+	height: 56px;
+	color: #485861;
+	font-weight: bold;
+	margin-left: 24px;
+	padding-left: 10px;
+	padding-top: 19px;
+	font-size: 9px;
+	line-height: 11px;
+	box-sizing: border-box;
+	/* padding은 살이 찌는 것과 같이 사이즈가 증가됨 */
+	position: fixed;
+	right: 24px;
+	top: 0;
+}

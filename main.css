@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	font-family: 'san-selif';
+	/* 폰트 설정 */
+	background-color: #485861;
+	color: #FFE6CF;
+	font-size: 10px;
+	/* 폰트 사이즈 설정 안해둔 값들의 기본 설정 */
+	line-height: 1.2;
+	font-weight: normal;
+	overflow-x: hidden;
+	/* x축으로 넘치는 부분 없애기(스크롤 안되게 하는 법) */
+}
+
+h1 {
+  /* 특정 class 안의 태그만 지정*/
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+	/* 줄과 줄 사이 간격 */
+  font-weight: normal;
+  /* 글자 굵기 */
+}
+
+p {
+  margin:0;
+}
+
+ul, 
+li {
+  margin: 0;
+  padding: 0;
+  /* 안쪽여백 */
+}
+
+li {
+  list-style: none;
+}
