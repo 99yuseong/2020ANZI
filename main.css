@@ -12,14 +12,27 @@ body {
 	/* x축으로 넘치는 부분 없애기(스크롤 안되게 하는 법) */
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: 400;
+	 /* 글자 굵기 */
+	line-height: 1.2;
+}
+
 h1 {
   /* 특정 class 안의 태그만 지정*/
-  margin: 0;
   font-size: 30px;
   line-height: 30px;
 	/* 줄과 줄 사이 간격 */
-  font-weight: 1.2;
-  /* 글자 굵기 */
+}
+
+h2 {
+	font-size: 24px;
 }
 
 p {
