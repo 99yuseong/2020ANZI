@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      /* animation 이름 */
+      @keyframes show {
+        from {
+          opacity: 0;
+          transform: translate(0);
+        }
+        /* 
+        0%
+        30%
+        50%
+        100% 
+        */
+        to {
+          opacity: 1;
+          transform: translate(300px);
+        }
+      }
+
+      #parent {
+        perspective: 300px;
+      }
+      #element {
+        width: 100px;
+        height: 100px;
+        transition: 1s;
+        background-color: red;
+        animation: show 3s both;
+        animation-delay: 0.5s;
+        animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);
+        animation-iteration-count: 3;
+        margin: 90px auto;
+        transition: transform 2s;
+        
+        /* animation-name: show;
+        animation-duration: 3s;
+        animation-fill-mode: forwards; */
+      }
+
+      /* #parent:hover #element{
+        background-color: blue;
+        transform: 
+        rotateZ(360deg) 
+        translateZ(100px) 
+        scale(2);
+        transform-origin: 50% 50%;
+      } */
+
+
+    </style>
+  </head>
+  <body>
+    <div id="parent"><div id="element"></div></div>
+  </body>
+</html>

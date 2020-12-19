@@ -1,0 +1,151 @@
+@keyframes showText {
+	from {
+		transform: translateY(10px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+body {
+	margin: 0;
+	font-family: 'san-selif';
+	/* 폰트 설정 */
+	background-color: #485861;
+	color: #FFE6CF;
+	font-size: 10px;
+	/* 폰트 사이즈 설정 안해둔 값들의 기본 설정 */
+	line-height: 1.2;
+	font-weight: bold;
+	overflow-x: hidden;
+	/* x축으로 넘치는 부분 없애기(스크롤 안되게 하는 법) */
+	margin-bottom:72px;
+	width:100%;
+	height:100%;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-weight: 400;
+	 /* 글자 굵기 */
+	line-height: 1.2;
+}
+
+h1 {
+  /* 특정 class 안의 태그만 지정*/
+  font-size: 30px;
+  line-height: 30px;
+	/* 줄과 줄 사이 간격 */
+}
+
+h2 {
+	font-size: 24px;
+}
+
+p {
+  margin:0;
+}
+
+ul, 
+li {
+  margin: 0;
+  padding: 0;
+  /* 안쪽여백 */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+	color: #FFE6CF;
+	text-decoration: none;
+}
+
+input {
+	background-color: rgba(255, 255, 255, 0.08);
+	border:none;
+	height: 40px;
+	border-radius: 8px;
+	font-size: 14px;
+	color:white;
+	text-align: center;
+	transition:0.2s;
+}
+
+input:focus {
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.12);
+}
+
+input::placeholder {
+	color:rgba(255, 255, 255, 0.3);
+	text-align: center;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #FFE6CF;
+	font-size: 15px;
+
+}
+
+.mouse-effect {
+    position:relative;
+    overflow: hidden;
+}
+
+.mouse-effect:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    transition: 0.2s;
+}
+
+.mouse-effect:hover:after {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.mouse-effect:active:after {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.gnb {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+	background-color: #394952;
+	border-top: 1px solid rgba(0, 0, 0, 0.08);
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+
+.gnb a {
+	width: 25%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.3;
+}
+
+.gnb .active {
+	opacity:1;
+}
