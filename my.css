@@ -13,17 +13,19 @@ header .thumb {
     width: 92px;
     height: 92px;
     margin-bottom:36px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1),
+     0 12px 24px rgba(0, 0, 0, 0.24);
 }
 
 header .badge {
     width: 28px;
     height: 28px;
     font-size: 12px;
-    background-color: red;
+    background-color: #ff5500;
     border-radius: 50%;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +54,7 @@ header .mail {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .list .item .left {
