@@ -34,17 +34,6 @@
 	}
 }
 
-@keyframes slideDown {
-	from {
-		transform: translateY(-60px);
-	}
-
-	to {
-		transform: translateY(0px);
-	}
-
-}
-
 .text-area {
 	/* margin > 여백 */
 	margin-top: 90px;
@@ -92,7 +81,6 @@ p {
 	border-radius: 50%;
  	/* 원을 만들고 싶을 때 */
 	position: absolute;
-	animation-fill-mode: both;
 }
 
 .circle:nth-child(1) {
@@ -103,18 +91,18 @@ p {
 	20%의 opacity */
 	box-sizing: border-box;
 	/* 보통 border은 외부쪽으로 그려지게 되는데, 선이 굵어지면 크기가 좀 커질  있음. 그래서 안쪽으로 그려지게 하려면 이렇게! */
-	animation-delay: 0s;
+	animation-delay: 1s;
 	animation: circleShow1 4s;
 	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-	
+	animation-fill-mode: both;
 }
 .circle:nth-child(2) {
 	background-color: #ffc000;
 	left: 100px;
-	animation-delay: 0.2s;
+	animation-delay: 1.2s;
 	animation: circleShow2 4s;
 	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-	
+	animation-fill-mode: both;
 }
 .circle:nth-child(3) {
 	background-color: #fedd15;
@@ -123,21 +111,11 @@ p {
 	1초 동안 움직여라 */
 	top: 0;
 	/* 시작점과 끝점(hover에서 명시) 둘 다 있어야 animation으로 나타날 수 있음 */
-	animation-delay: 0.3s;
+	animation-delay: 1.3s;
 	animation: circleShow3 4s;
 	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-	
+	animation-fill-mode: both;
 }
-
-/* .circle:nth-child(3):hover {
-	background-color: blue;
-	top: -20px;
-}
-
-.circle:nth-child(3):active {
-	background-color: red;
-	top: -20px;
-} */
 
 #badge {
 	background-color: #ffc000;
@@ -157,5 +135,4 @@ p {
 	top: 0;
 	animation: slideDown 2s;
 	animation-fill-mode: both;
-	animation-delay: 0.3s;
 }

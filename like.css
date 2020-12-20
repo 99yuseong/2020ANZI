@@ -45,9 +45,16 @@
     margin-bottom:12px;
 }
 
+.text-area .title {
+    animation: showText 1.5s;
+    animation-fill-mode: both;
+}
+
 .text-area .desc {
     margin-top: 12px;
-
+    animation: showText 1.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: both;
 }
 
 .list {
@@ -68,26 +75,44 @@
 }
 
 .list .item:nth-child(1){
-    background-image: url(img/likes-1.jpg)
+    background-image: url(img/likes-1.jpg);
+    animation: Appear 1s both;
+    animation-timing-function: linear;
 }
 
 .list .item:nth-child(2){
-    background-image: url(img/likes-2.jpg)
+    background-image: url(img/likes-2.jpg);
+    animation: Appear 1s both;
+    animation-delay: 0.3s;
+    animation-timing-function: linear;
 }
 
 .list .item:nth-child(3){
-    background-image: url(img/likes-3.jpg)
+    background-image: url(img/likes-3.jpg);
+    animation: Appear 1s both;
+    animation-delay: 0.4s;
+    animation-timing-function: linear;
 }
 
 .list .item:nth-child(4){
-    background-image: url(img/likes-4.jpg)
+    background-image: url(img/likes-4.jpg);
+    animation: Appear 1s both;
+    animation-delay: 0.1s;
+    animation-timing-function: linear;
+
 }
 
 .list .item:nth-child(5){
-    background-image: url(img/likes-1.jpg)
+    background-image: url(img/likes-1.jpg);
+    animation: Appear 1s both;
+    animation-delay: 0.2s;
+    animation-timing-function: linear;
 }
 
 .list .item:nth-child(6){
-    background-image: url(img/likes-2.jpg)
+    background-image: url(img/likes-2.jpg);
+    animation: Appear 1s both;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
 }
 

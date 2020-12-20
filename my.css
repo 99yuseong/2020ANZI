@@ -1,6 +1,7 @@
 header {
     text-align: center;
     margin-top: 40px;
+    perspective: 100px;
 }
 
 header .thumb-wrapper {
@@ -18,6 +19,7 @@ header .thumb {
 }
 
 header .badge {
+
     width: 28px;
     height: 28px;
     font-size: 12px;
@@ -29,6 +31,7 @@ header .badge {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: bigSmall 0.8s both;
 }
 
 header .greeting {

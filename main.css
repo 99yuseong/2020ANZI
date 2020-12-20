@@ -1,3 +1,4 @@
+/* tiny drop */
 @keyframes showText {
 	from {
 		transform: translateY(10px);
@@ -6,6 +7,59 @@
 
 	to {
 		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+/* slide down */
+@keyframes slideDown {
+	from {
+		transform: translateY(-60px);
+	}
+
+	to {
+		transform: translateY(0px);
+	}
+
+}
+/* none to exist */
+@keyframes Appear {
+	0% {
+		transform: translateY(10px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+/* appear from left */
+@keyframes Appear2 {
+	from {
+		transform: translateX(-30px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* size bigger and return */
+@keyframes bigSmall {
+	0% {
+		transform: scale(0.2);
+		opacity: 0.2;
+	}
+	
+	50% {
+		transform: scale(1.3);
+		opacity: 1;
+	}
+
+	100% { 
+		transform: scale(1);
 		opacity: 1;
 	}
 }
