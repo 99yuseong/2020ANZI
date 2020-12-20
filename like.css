@@ -5,6 +5,7 @@
 
 .search form {
     display: flex;
+    box-sizing: border-box;
 }
 
 .search form:hover .search-icon {
@@ -46,13 +47,13 @@
 }
 
 .text-area .title {
-    animation: showText 1.5s;
+    animation: showText 1s;
     animation-fill-mode: both;
 }
 
 .text-area .desc {
     margin-top: 12px;
-    animation: showText 1.5s;
+    animation: showText 1s;
     animation-delay: 0.2s;
     animation-fill-mode: both;
 }
