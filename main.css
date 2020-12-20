@@ -64,6 +64,33 @@
 	}
 }
 
+@keyframes bigSmall_2 {
+	0% {
+		transform: scale(0.7);
+		opacity: 0.2;
+	}
+	
+	50% {
+		transform: scale(1.1);
+		opacity: 1;
+	}
+
+	100% { 
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 body {
 	margin: 0;
 	font-family: 'san-selif';

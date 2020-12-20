@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Detail</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            padding: 24px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 24px;
+            background-color: #485861; 
+        }
+
+        .text-area {
+            margin-top: 192px;
+        }
+
+        .title {
+            margin-bottom: 12px;
+            animation: showText 1s;
+        }
+
+        .desc {
+            animation: showText 1s;
+            animation-delay: 0.1s;
+        }
+
+        sup {
+            font-size: 10px;
+        }
+
+        .line {
+            width: 30px;
+            height: 1px;
+            border-bottom: 1px solid #FFE6CF;
+            margin: 32px 0;
+            opacity: 0.3;
+            animation: showText 1s;
+        }
+
+        .content {
+            font-size: 16px;
+            font-weight: normal;
+            animation: showText 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="issue.html"><img src="img/icon/arrow-back.svg" alt=""></a>
+        <img src="img/icon/like.svg" alt="">
+    </header>
+    <div class="text-area">
+        <h1 class="title">
+            Issues <sup>1</sup>
+        </h1>
+        <p class="desc">
+            We'll make a mobile magazine<br>
+            using html, css only.
+        </p>
+    </div>
+
+    <div class="line"></div>
+    <p class="content">hello worldhello world hello world hello world 
+        hello world hello world hello world hello world hello world 
+        hello world hello world hello world hello world hello world 
+        hello world hello world hello world hello world hello world 
+        hello world hello world hello world hello world hello world 
+        hello world hello world hello world hello world hello world 
+        hello world hello world hello world hello world hello world 
+        hello world hello world hello world hello world hello world 
+        hello world hello world hello world hello world hello world 
+
+    </p>
+
+    <nav class="gnb">
+            <a class="cover mouse-effect" href="index.html">
+              <img src="img/icon/cover.svg" alt="">
+            </a>
+            <a class="issue mouse-effect active" href="issue.html">
+              <img src="img/icon/issue.svg" alt="">
+            </a>
+            <a class="like mouse-effect" href="like.html">
+              <img src="img/icon/like.svg" alt="">
+            </a>
+            <a class="my mouse-effect" href="my.html">
+              <img src="img/icon/more.svg" alt="">
+            </a>
+          </nav>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <title>My-modal</title>
+    <style>
+        header {
+            text-align: center;
+            margin-top: 40px;
+            perspective: 100px;
+        }
+
+        header .thumb-wrapper {
+            display: inline-block;
+            position: relative;
+        }
+
+        header .thumb {
+            border-radius: 50%;
+            width: 92px;
+            height: 92px;
+            margin-bottom: 36px;
+            box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1),
+                0 12px 24px rgba(0, 0, 0, 0.24);
+        }
+
+        header .badge {
+
+            width: 28px;
+            height: 28px;
+            font-size: 12px;
+            background-color: #ff5500;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: -8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .greeting {
+            margin-bottom: 10px;
+        }
+
+        header .mail {
+            padding: 8px 22px 10px 22px;
+            background-color: rgba(0, 0, 0, 0.05);
+            display: inline-block;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-sizing: border-box;
+            margin-top: 18px;
+        }
+
+        .list {
+            margin-top: 40px;
+            font-size: 15px;
+        }
+
+        .list .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .list .item .left {
+            display: flex;
+            align-items: center;
+        }
+
+        .list .item .left .name {
+            margin-left: 6px;
+        }
+
+        .list .item .right {
+            opacity: 0.5;
+        }
+
+        .list .item img {
+            padding: 20px 22px;
+
+        }
+
+        .list .item .right img {
+            padding-right: 14px;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            animation: fadeIn 1s both;
+        }
+
+        .modal-wrapper {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-inner {
+            width: calc(100% - 48px);
+            background-color: #485861;
+            border-radius: 12px;
+            overflow: hidden;
+            animation: bigSmall_2 1s both;
+        }
+
+        .modal-inner .thumb {
+            height: 234px;
+            background-color: aliceblue;
+            background-image: url(img/likes-3.jpg);
+            background-size: cover;
+            background-position: center; 
+        }
+
+        .bottom-info .title {
+            font-size: 17px;
+        }
+
+        .bottom-info .description {
+            line-height: 19px;
+            margin-top: 4px;
+            font-size: 12px;
+        }
+
+        .bottom-info button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: 1px solid rgba(255, 230, 207, 0.28);
+            border-radius: 4px;
+            position: absolute;
+            right: 24px;
+            bottom: 24px;
+        }
+
+        .bottom-info {
+            height: 212px;
+            padding: 24px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!-- 썸네일 -->
+        <div class="thumb-wrapper">
+            <img class="thumb" src="img/user-thumb.png" alt="">
+            <div class="badge">7</div>
+        </div>
+        <!-- 텍스트 영역 -->
+        <div class="text-area">
+            <h2 class="greeting">Hi, Mary Jane</h2>
+            <div class="desc">
+                We'll make a mobile magazine<br>
+                using html, css only.
+            </div>
+        </div>
+        <!-- mail -->
+        <div class="mail mouse-effect">
+            <a href=mailto:dbtjd6511@gmail.com>dbtjd6511@gmail.com</a>
+        </div>
+    </header>
+
+
+    <!-- 리스트 -->
+    <ul class="list">
+        <!-- bookmark -->
+        <li class="item mouse-effect">
+            <div class="left">
+                <img src="img/icon/bookmark.svg" alt="">
+                <div class="name">Bookmark</div>
+            </div>
+            <div class="right">
+                <img src="img/icon/right_arrow.svg" alt="">
+            </div>
+        </li>
+        <!-- account -->
+        <li class="item mouse-effect">
+            <div class="left">
+                <img src="img/icon/account.svg" alt="">
+                <div class="name">account</div>
+            </div>
+            <div class="right">
+                <img src="img/icon/right_arrow.svg" alt="">
+            </div>
+        </li>
+        <!-- business -->
+        <li class="item mouse-effect">
+            <div class="left">
+                <img src="img/icon/business.svg" alt="">
+                <div class="name">Business</div>
+            </div>
+            <div class="right">
+                <img src="img/icon/right_arrow.svg" alt="">
+            </div>
+        </li>
+        <!-- puzzle -->
+        <li class="item mouse-effect">
+            <div class="left">
+                <img src="img/icon/puzzle.svg" alt="">
+                <div class="name">Puzzle</div>
+            </div>
+            <div class="right">
+                <img src="img/icon/right_arrow.svg" alt="">
+            </div>
+        </li>
+
+    </ul>
+
+    <nav class="gnb">
+        <a class="cover mouse-effect" href="index.html">
+            <img src="img/icon/cover.svg" alt="">
+        </a>
+        <a class="issue mouse-effect" href="issue.html">
+            <img src="img/icon/issue.svg" alt="">
+        </a>
+        <a class="like mouse-effect" href="like.html">
+            <img src="img/icon/like.svg" alt="">
+        </a>
+        <a class="my mouse-effect active" href="my.html">
+            <img src="img/icon/more.svg" alt="">
+        </a>
+    </nav>
+
+    <div class="overlay"></div>
+
+    <div class="modal-wrapper">
+        <div class="modal-inner">
+            <div class="thumb"></div>
+            <div class="bottom-info">
+                <div class="title">Dear, Designers.</div>
+                <p class="description">
+                    Lorem Ipsum is simply dummy text of the 
+                    printing and typesetting 
+                    industry. It has been the industry's
+                    standard.
+                </p>
+                <a href="my.html"><button>Close</button></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
