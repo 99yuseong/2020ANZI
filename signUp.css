@@ -1,6 +1,6 @@
 header h2 {
-    margin: 50px auto;
-    text-align: center;
+    margin: 50px 0 50px 55px;
+    text-align: left;
 }
 
 form {
@@ -12,38 +12,80 @@ form {
 }
 
 form label {
-    grid-column: 2 / 6;
+    background-color: rgba(255, 255, 255, 0.3);
+    grid-column: 2 / 5;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    border: 1px solid #FFE6CF;
+
     font-size: 12px;
 }
 
 form input {
-    grid-column: 6 / 11;
+    grid-column: 5 / 11;
+}
+
+.skills-title,
+.level-title {
+    grid-column: 2 / 5;
+    background-color: rgba(255, 255, 255, 0.3);
+    border:none;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.level input,
+.skills input {
+    margin: 0 5px 0 0 ;
+}
+
+form .level,
+form .skills {
+    grid-column: 5 / 11;
+    display: flex;
+    justify-content: space-between;
+}
+
+.beginer-set,
+.html-set {
+    grid-column: 5 / 7;
+    display: flex;
+}
+
+.junior-set,
+.css-set {
+    grid-column: 7 / 9;
+    display: flex;
+}
+
+.senior-set, 
+.js-set
+{
+    grid-column: 9 / 11;
+    display: flex;
+}
+
+.level label,
+.skills label {
+    background-color: rgba(255, 255, 255, 0.08);
+    border:none;
+	height: 40px;
+	border-radius: 8px;
+	font-size: 10px;
+    text-align: center;
+    width: 60px;
 }
 
 button {
     grid-column: 5 / 8;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    height: 30px;
 }
-
-/* 
-.input-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: 24px;
-    grid-row-gap: 12px;
-    grid-auto-rows: minmax(100px, auto);
-}
-
-.keyword {
-	background-color: rgba(255, 255, 255, 0.08);
-	border: none;
-	height: 40px;
-	border-radius: 8px;
-	font-size: 14px;
-	text-align: center;
-    transition:0.2s;
-} */

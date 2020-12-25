@@ -16,28 +16,62 @@
     </header>
 
     <form action="" method="GET" class="input-wrapper">
-        <label for="input-name">name</label>
+        <label for="input-name">Name</label>
         <input id="input-name" type="text" placeholder="Please enter name" required>
 
         <label for="input-id">ID</label>
         <input id="input-id" type="text" placeholder="Min 6, Max 12 characters" minlength="6" maxlength="12" required>
 
-        <label for="input-password">paassword</label>
+        <label for="input-password">Password</label>
         <input id="input-password" type="password" placeholder="8 characters or more" minlength="8" required>
 
         <label for="input-email">Email</label>
         <input id="input-email" type="email" placeholder="Please enter e-mail" required>
 
         <label for="input-tel">Phone numbers</label>
-        <input id="input-tel" type="tel" placeholder="form 000-0000-0000" required>
+        <input id="input-tel" type="tel" placeholder="form 000-0000-0000" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
 
-        <label for="input-age">age</label>
+        <label for="input-age">Age</label>
         <input id="input-age" type="number" placeholder="12 to 122 years old" min="12" max="122">
 
-        <label for="input-profile">profile</label>
+        <label for="input-profile">Profile</label>
         <input id="input-profile" type="file" placeholder="Only PNG, JPG accepted" accept=".png, .jpg">
 
-        <button>
+        <div class="level-title">level</div>
+
+        <div class=level>
+            <div class="beginer-set">
+                <input id="beginer" name="level" value="beginer" type="radio">
+                <label for="beginer">beginer</label>
+            </div>
+            <div class="junior-set">
+                <input id="junior" name="level" value="junior" type="radio">
+                <label for="junior">junior</label>
+            </div>
+            <div class="senior-set">
+                <input id="senior" name="level" value="senior" type="radio">
+                <label for="senior">senior</label>
+            </div>
+        </div>
+
+        <div class="skills-title">Available skills</div>
+
+        <div class="skills">
+            <div class="html-set">
+                <input id="html" name="skills" value="html" type="checkbox">
+                <label for="html">html</label>
+            </div>
+            <div class="css-set">
+                <input id="css" name="skills" value="css" type="checkbox">
+                <label for="css">css</label>
+            </div>
+            <div class="js-set">
+                <input id="js" name="skills" value="js" type="checkbox">
+                <label for="js">js</label>
+            </div>
+        </div>
+
+        <button type="submit">
             Submit
         </button>
     </form>
