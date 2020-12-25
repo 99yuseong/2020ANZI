@@ -118,6 +118,7 @@ p {
 	animation-delay: 0.21s;
 	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 	animation-fill-mode: both;
+	overflow-x: hidden;
 }
 
 #badge {
