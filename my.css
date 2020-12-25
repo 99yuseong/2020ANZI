@@ -1,7 +1,18 @@
 header {
     text-align: center;
-    margin-top: 40px;
+    padding-top: 40px;
     perspective: 100px;
+    position: relative;
+}
+
+header .signUp {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 header .thumb-wrapper {

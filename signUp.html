@@ -12,12 +12,23 @@
 
 <body>
     <header>
-        <h2>SignUp Form</h2>
+        <h1>SignUp Form</h1>
     </header>
 
     <form action="" method="GET" class="input-wrapper">
         <label for="input-name">Name</label>
         <input id="input-name" type="text" placeholder="Please enter name" required>
+
+        <label for="input-age">Age</label>
+        <input id="input-age" type="number" placeholder="12 to 122 years old" min="12" max="122">
+
+        <label for="nations">Nations</label>
+        <select name="nations" id="nations">
+            <option value="KR">Korea</option>
+            <option value="US">USA</option>
+            <option value="CN">China</option>
+            <option value="JP">Japan</option>
+        </select>
 
         <label for="input-id">ID</label>
         <input id="input-id" type="text" placeholder="Min 6, Max 12 characters" minlength="6" maxlength="12" required>
@@ -30,9 +41,6 @@
 
         <label for="input-tel">Phone numbers</label>
         <input id="input-tel" type="tel" placeholder="form 000-0000-0000" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
-
-        <label for="input-age">Age</label>
-        <input id="input-age" type="number" placeholder="12 to 122 years old" min="12" max="122">
 
         <label for="input-profile">Profile</label>
         <input id="input-profile" type="file" placeholder="Only PNG, JPG accepted" accept=".png, .jpg">
@@ -70,13 +78,26 @@
                 <label for="js">js</label>
             </div>
         </div>
-
-        <button type="submit">
+        <button class="mouse-effect" type="submit" onclick="location.href='afterSignUp.html'">
             Submit
         </button>
+
     </form>
 
-
+    <nav class="gnb">
+        <a class="cover mouse-effect" href="index.html">
+            <img src="img/icon/cover.svg" alt="">
+        </a>
+        <a class="issue mouse-effect" href="issue.html">
+            <img src="img/icon/issue.svg" alt="">
+        </a>
+        <a class="like mouse-effect" href="like.html">
+            <img src="img/icon/like.svg" alt="">
+        </a>
+        <a class="my mouse-effect active" href="my.html">
+            <img src="img/icon/more.svg" alt="">
+        </a>
+    </nav>
 
     </div>
 </body>
