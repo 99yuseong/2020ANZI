@@ -3,6 +3,33 @@ header h2 {
     text-align: center;
 }
 
+form {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    box-sizing: border-box;
+}
+
+form label {
+    grid-column: 2 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid #FFE6CF;
+    font-size: 12px;
+}
+
+form input {
+    grid-column: 6 / 11;
+}
+
+button {
+    grid-column: 5 / 8;
+}
+
+/* 
 .input-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -19,40 +46,4 @@ header h2 {
 	font-size: 14px;
 	text-align: center;
     transition:0.2s;
-    grid-column: 2 / 3;
-}
-
-.input-wrapper .item:nth-child(1) {
-    grid-column: 3 / 5;
-    grid-row: 1;
-}
-
-.input-wrapper .item:nth-child(2) {
-    grid-column: 3 / 5;
-    grid-row: 2;
-}
-
-.input-wrapper .item:nth-child(3) {
-    grid-column: 3 / 5;
-    grid-row: 3;
-}
-
-.input-wrapper .item:nth-child(4) {
-    grid-column: 3 / 5;
-    grid-row: 4;
-}
-
-.input-wrapper .item:nth-child(5) {
-    grid-column: 3 / 5;
-    grid-row: 5;
-}
-
-.input-wrapper .item:nth-child(6) {
-    grid-column: 3 / 5;
-    grid-row: 6;
-}
-
-.input-wrapper .item:nth-child(7) {
-    grid-column: 3 / 5;
-    grid-row: 7;
-}
+} */

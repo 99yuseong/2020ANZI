@@ -14,41 +14,33 @@
     <header>
         <h2>SignUp Form</h2>
     </header>
-    <form class="input-wrapper">
-        <div class="item">
-            <div class="keyword">이름</div>
-            <input class="input" type="text" placeholder="name">
-        </div>
 
-        <div class="item">
-            <div class="keyword">아이디</div>
-            <input class="input" type="text" placeholder="Id">
-        </div>
+    <form action="" method="GET" class="input-wrapper">
+        <label for="input-name">name</label>
+        <input id="input-name" type="text" placeholder="Please enter name" required>
 
-        <div class="item">
-            <div class="keyword">이메일</div>
-            <input class="input" type="email" placeholder="e-mail">
-        </div>
+        <label for="input-id">ID</label>
+        <input id="input-id" type="text" placeholder="Min 6, Max 12 characters" minlength="6" maxlength="12" required>
 
-        <div class="item">
-            <div class="keyword">비밀번호</div>
-            <input class="input" type="password" placeholder="password">
-        </div>
+        <label for="input-password">paassword</label>
+        <input id="input-password" type="password" placeholder="8 characters or more" minlength="8" required>
 
-        <div class="item">
-            <div class="keyword">전화번호</div>
-            <input class="input" type="tel" placeholder="phone-number">
-        </div>
+        <label for="input-email">Email</label>
+        <input id="input-email" type="email" placeholder="Please enter e-mail" required>
 
-        <div class="item">
-            <div class="keyword">나이</div>
-            <input class="input" type="number" placeholder="age">
-        </div>
+        <label for="input-tel">Phone numbers</label>
+        <input id="input-tel" type="tel" placeholder="form 000-0000-0000" required>
 
-        <div class="item">
-            <div class="keyword">프로필사진</div>
-            <input class="input" type="" placeholder="profile">
-        </form>
+        <label for="input-age">age</label>
+        <input id="input-age" type="number" placeholder="12 to 122 years old" min="12" max="122">
+
+        <label for="input-profile">profile</label>
+        <input id="input-profile" type="file" placeholder="Only PNG, JPG accepted" accept=".png, .jpg">
+
+        <button>
+            Submit
+        </button>
+    </form>
 
 
 
