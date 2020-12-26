@@ -5,6 +5,7 @@ header h1 {
 
 input {
     color: #FFE6CF;
+    margin: 0;
 }
 
 form {
@@ -58,8 +59,12 @@ form input {
     align-items: center;
 }
 
-.level input,
-.skills input {
+#beginer,
+#junior,
+#senior,
+#html,
+#css,
+#js {
     margin: 0 5px 0 0 ;
 }
 
@@ -83,21 +88,24 @@ form .skills {
 }
 
 .senior-set, 
-.js-set
-{
+.js-set {
     grid-column: 9 / 11;
     display: flex;
-}
+} 
 
-.level label,
-.skills label {
+.beginer-set label,
+.junior-set label,
+.senior-set label,
+.html-set label,
+.css-set label,
+.js-set label {
     background-color: rgba(255, 255, 255, 0.08);
     border:none;
 	height: 40px;
 	border-radius: 8px;
 	font-size: 10px;
     text-align: center;
-    width: 60px;
+    width: 100%;
 }
 
 button {

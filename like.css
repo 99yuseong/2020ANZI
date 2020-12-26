@@ -1,11 +1,13 @@
 .search {
     margin: 20px;
     position: relative;
+    overflow: hidden;
 }
 
 .search form {
     display: flex;
     box-sizing: border-box;
+    animation: slideDown 1s both;
 }
 
 .search form:hover .search-icon {
@@ -27,7 +29,6 @@
 
 .search .cancel-btn {
     flex-shrink: 0;
-    /* flex와 관계없이 자기 width값 유지 */
     margin-left: 20px;
     padding: 0;
     opacity: 0;

@@ -14,10 +14,12 @@
 @keyframes slideDown {
 	from {
 		transform: translateY(-60px);
+		opacity: 0;
 	}
 
 	to {
 		transform: translateY(0px);
+		opacity: 1;
 	}
 
 }
@@ -205,7 +207,7 @@ button {
 }
 
 .gnb {
-    width: 100%;
+    width: 100vw;
     height: 72px;
     position: fixed;
     bottom: 0;

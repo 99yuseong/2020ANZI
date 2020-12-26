@@ -72,28 +72,26 @@ p {
 }
 
 #circle-wrapper {
-	/* id의 경우에는 #, class의 경우에는 . > 공통된 속성을 주고 싶다!*/
 	position: relative;
-	margin-left: 24px;
 	margin-top: 42px;
+	width: 100%;
+	height: 500px;
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 .circle {
 	width: 246px;
 	height: 246px;
 	border-radius: 50%;
- 	/* 원을 만들고 싶을 때 */
 	position: absolute;
 }
 
 .circle:nth-child(1) {
-	/* 몇 번째 child를 선택한다. 혹은 first-child......last-child로도 사용할  있음 */
+	margin-left: 24px;
 	background-color: transparent;
 	border: 1px solid rgb(0, 0, 0, 0.3);
-	/* opacity: 0.2;
-	20%의 opacity */
 	box-sizing: border-box;
-	/* 보통 border은 외부쪽으로 그려지게 되는데, 선이 굵어지면 크기가 좀 커질  있음. 그래서 안쪽으로 그려지게 하려면 이렇게! */
 	animation: circleShow1 1s;
 	animation-delay: 0.07s;
 	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
@@ -109,16 +107,12 @@ p {
 }
 .circle:nth-child(3) {
 	background-color: #fedd15;
-	left: 200px;
-	/* transition: 0.2s;
-	1초 동안 움직여라 */
+	left: 180px;
 	top: 0;
-	/* 시작점과 끝점(hover에서 명시) 둘 다 있어야 animation으로 나타날 수 있음 */
 	animation: circleShow3 1s;
 	animation-delay: 0.21s;
 	animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 	animation-fill-mode: both;
-	overflow-x: hidden;
 }
 
 #badge {
@@ -133,7 +127,6 @@ p {
 	font-size: 9px;
 	line-height: 11px;
 	box-sizing: border-box;
-	/* padding은 살이 찌는 것과 같이 사이즈가 증가됨 */
 	position: fixed;
 	right: 24px;
 	top: 0;
